@@ -21,12 +21,13 @@ Copyright (c) 2010-2013 Thomas Woolford and contributors
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
 """
-
-from struct import Struct, error as StructError
-from gzip import GzipFile
+import io
+import os
 import zlib
+
 from collections import MutableMapping, MutableSequence, Sequence
-import os, io
+from gzip import GzipFile
+from struct import Struct, error as StructError
 
 try:
     unicode

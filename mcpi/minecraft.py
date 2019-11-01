@@ -1,10 +1,12 @@
-from connection import Connection,RequestError
-from vec3 import Vec3
-from event import BlockEvent,ChatEvent
-from block import Block
 import math
+
 from os import environ
-from util import flatten,floorFlatten
+
+from .connection import Connection, RequestError
+from .vec3 import Vec3
+from .event import BlockEvent, ChatEvent
+from .block import Block
+from .util import flatten, floorFlatten
 
 """ Minecraft PI low level api v0.1_1
 
