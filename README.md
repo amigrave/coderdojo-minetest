@@ -1,8 +1,11 @@
-# CoderDojo Minetest material
+# CoderDojo Minetest
 
 ## Introduction
 
-This repositoy holds everything needed to start a Python/Minetest workshop
+Ce repository contient tout le materiel necessaire pour les
+ateliers CoderDojo minetest.
+
+[Le cours se trouve ici](https://amigrave.github.io/coderdojo-minetest)
 
 ## Installation
 
@@ -13,6 +16,10 @@ sudo apt install -y minetest lua-socket
 pip3 install --user --upgrade coderdojo-minetest
 ```
 
+:bell: TODO:
+- [ ] copy mod + world + hello.py
+- [ ] ln -s ~/.minetest/mods/raspberryjammod/coderdojo ~/Desktop/coderdojo-minetest
+
 # Windows
 
 - Install python3
@@ -21,10 +28,11 @@ pip3 install --user --upgrade coderdojo-minetest
     pip3 install --user --upgrade coderdojo-minetest
 
 - Unzip the release file somewhere
+- Shortcut `<minetest>/mods/raspberryjammod/coderdojo` -> `<Desktop>/coderdojo-minetest`
 - Launch minetest `bin/minetest.exe`
 
 
-## TODO
+## :bell: TODO
 
 Single installer for all OSes/distros (not working yet)
 
