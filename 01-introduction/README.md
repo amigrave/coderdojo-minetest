@@ -45,8 +45,8 @@ Voici le code source du premier programme que nous venons d'exécuter en
 tapant la commande `/py hello`:
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 mc.postToChat("Hello from CoderDojo !")
 ```
@@ -54,8 +54,13 @@ mc.postToChat("Hello from CoderDojo !")
 Les deux premières lignes sont nécessaires afin d'obtenir un objet python
 qui est lié au monde Minetest que nous avons ouvert en jeu.
 
-:exclamation: Afin de rester consistants, nous donnerons le nom `mc` à cet
-objet dans tous nos programmes.
+**Note:**  On retrouve `Minecraft` dans le nom de l'objet car le module
+Python qu'on utilise reprend les mêmes noms que le module Python de Minecraft.
+Cela a l'avantage de nous permettre d'utiliser des exemples qui ont été écrits
+pour Minecraft à l'origine.
+
+❗Afin de rester consistants, nous donnerons le nom `mc` à cet objet dans tous
+nos programmes.
 
 Une fois que nous avons cet objet, nous pouvons appeler ses méthodes afin
 d'interagir avec le monde. La première méthode que nous allons apprendre est
