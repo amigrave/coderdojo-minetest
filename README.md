@@ -2,5 +2,6 @@
 
 
 ## [Installation](https://github.com/amigrave/coderdojo-minetest#installation)
-## [Introduction](./01-introduction)
-## [Les fonctions de base](./02-basic-api)
+## [Introduction](./01-introduction.md)
+## [Les fonctions de base](./02-basic-api.md)
+## [La pyramide](./03-pyramide.md)
