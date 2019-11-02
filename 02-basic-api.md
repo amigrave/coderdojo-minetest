@@ -79,4 +79,4 @@ mc = minecraft.Minecraft.create()
 mc.setBlocks(-50, 0, -50, 50, 50, 50, block.AIR)
 ```
 
-[⬅️ Retour au sommaire](../)
+[⬅️ Retour au sommaire](./README.md)

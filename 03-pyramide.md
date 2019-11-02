@@ -162,4 +162,4 @@ Tu auras compris que cela nous permet de savoir si un nombre est pair ou
 impair. C'est un fameux indice pour résoudre l'exercice.
 N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
 
-[⬅️ Retour au sommaire](../)
+[⬅️ Retour au sommaire](./README.md)

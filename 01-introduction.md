@@ -137,4 +137,4 @@ cliquerons sur le bouton `Save`.
 ![](https://i.imgur.com/wEQVweK.png)
 
 
-[⬅️ Retour au sommaire](../)
+[⬅️ Retour au sommaire](./README.md)
