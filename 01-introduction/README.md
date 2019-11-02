@@ -7,9 +7,9 @@ Minetest est un **clone** de Minecraft sous **licence open source**.
 Dans le monde des logiciels, on parle de
 *[clone](https://fr.wikipedia.org/wiki/Clone_%28informatique%29)*
 lorsqu'on crée un nouveau logiciel tout en copiant les fonctionnalités d'un
-autre logiciel. Dans notre cas, `minetest` à été reprogrammé complètement
-tout en s'efforçant d'implémenter les mêmes fonctionnalités que Minecraft
-au fil du temps.
+autre. Dans notre cas, `minetest` à été reprogrammé complètement tout en
+s'efforçant d'implémenter les mêmes fonctionnalités que Minecraft au fil
+du temps.
 
 :bell: TODO: license open source
 
@@ -75,9 +75,39 @@ Pour exécuter notre programme nous avons deux options:
 
 ![](https://i.imgur.com/fqaZJQX.png)
 
-## La 3D
+## Quelques notions de 3D
 
-:bell: TODO: notions 3D
+Lorsque nous utilisons Minetest nous évoluons dans une représentation en
+trois dimensions d'un monde construit avec des blocs.
+
+Chaque bloc qui compose le monde a donc un position définie que l'on peut
+exprimer grâce aux coordonnées correspondant aux trois dimensions que l'on
+mesurera sur trois axes nommés X, Y et Z:
+
+![](https://i.imgur.com/UJ9VOC2.png)
+
+Un monde de Minetest n'est pas infini, selon les différentes versions du jeu
+il existe des limites qui font qu'un monde est un gigantesque cube formé
+de +- 60 000 blocs sur 60 000.
+
+Imaginons que notre personnage se trouve exactement au centre du monde, ses
+coordonnées sont alors X=0, Y=0, Z=0. Si le personnage se déplace de 10 blocs
+vers le Nord, ses coordonnées seront X=0, Y=0, Z=10. S'il se déplace
+maintenant 50 blocs vers le Sud ses coordonnés seront alors X=0, Y=0, Z=-40.
+
+Si le personnage se déplace de 15 blocs vers l'Est, ses coordonnées seront
+X=15, Y=0, Z=-40.
+
+Si le personnage fait un saut d'une hauteur de deux blocs, son point de saut
+le plus haut sera aux coordonnées X=15, Y=2, Z=-40 et une fois sont saut
+effectué il reviendra a la position X=15, Y=0, Z=-40. Faisons le creuser 99
+blocs dans le sol et il se retrouvera à la position X=15, Y=-99, Z=-40.
+
+![](https://i.imgur.com/H4xJycr.png)
+
+Note: pour voir la position du personnage dans Minetest il suffit d'appuyer sur
+la touche <key>F5</key>.
+
 
 ## Création d'un nouveau monde
 
