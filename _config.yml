@@ -1,1 +1,8 @@
+locale: "fr-BE"
+title: Atelier Minetest pour CoderDojo
+description: Minetest + Python = ❤️
 theme: jekyll-theme-tactile
+
+author:
+    name: "Fabien Meghazi"
+    github: "amigrave"
