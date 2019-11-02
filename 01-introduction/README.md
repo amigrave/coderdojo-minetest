@@ -105,14 +105,16 @@ blocs dans le sol et il se retrouvera à la position X=15, Y=-99, Z=-40.
 
 ![](https://i.imgur.com/H4xJycr.png)
 
-Note: pour voir la position du personnage dans Minetest il suffit d'appuyer sur
+**Note:** pour voir la position du personnage dans Minetest il suffit d'appuyer sur
 la touche <key>F5</key>.
 
 
 ## Création d'un nouveau monde
 
-Pour créer un nouveau monde il suffit de cliquer sur le bouton ``New``, une
-fois le nom du monde choisi on clique sur ``Create``
+Nous utiliserons le monde `coderdojo` disponible pour l'atelier, mais si plus
+tard il devient nécessaire de créer un nouveau monde, il nous suffira alors de
+cliquer sur le bouton ``New``, une fois le nom du monde complété on clique
+sur le bouton ``Create``
 
 ![Creation d'un nouveau monde](https://i.imgur.com/HIYGR2i.png)
 
@@ -123,8 +125,8 @@ configuration de notre nouveau mode
 ![](https://i.imgur.com/ZOgUM79.png)
 
 dans cette fenêtre il nous faudra activer le module
-[raspberryjammod](https://github.com/arpruss/raspberryjammod-minetest) en le
-sélectionnant et en cliquant sur la case `enabled`, pour terminer nous
+[raspberryjammod](https://github.com/arpruss/raspberryjammod-minetest)
+en le sélectionnant et en cliquant sur la case `enabled`, pour terminer nous
 cliquerons sur le bouton `Save`.
 
 ![](https://i.imgur.com/wEQVweK.png)
