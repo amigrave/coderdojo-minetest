@@ -55,3 +55,28 @@ Essayons maintenant de créer un fichier `test.py` dans le même répertoire que
 
 et regardons au dessus de notre tète (dans Minetest évidemment !)
 
+
+## .setBlocks(x1, y1, z1, x2, y2, z2, id)
+
+La méthode `setBlocks` prend six arguments dont deux jeux de coordonnées,
+(x1, y1, z1) et (x2, y2, z2) qui permettent de délimiter un parallélépipède
+rectangle.
+
+![](https://i.imgur.com/KQxmaaR.png)
+
+Ce parallélépipède rectangle sera rempli par des blocs dont le type est
+spécifié par l'argument `id` (tout comme nous l'avons fait pour la méthode
+`setBlock`).
+
+Nous allons nous créer un programme qui va nous permettre de nous préparer une
+zone de travail confortable, appelons ce script `efface.py` car il nous servira
+à faire table rase entre deux tests en utilisant la commande `/py efface`.
+
+```python
+from mcpi import block, minecraft
+mc = minecraft.Minecraft.create()
+
+mc.setBlocks(-50, 0, -50, 50, 50, 50, block.AIR)
+```
+
+[⬅️ Retour au sommaire](../)

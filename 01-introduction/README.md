@@ -135,3 +135,6 @@ en le sélectionnant et en cliquant sur la case `enabled`, pour terminer nous
 cliquerons sur le bouton `Save`.
 
 ![](https://i.imgur.com/wEQVweK.png)
+
+
+[⬅️ Retour au sommaire](../)
