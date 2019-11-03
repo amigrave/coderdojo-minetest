@@ -16,8 +16,9 @@ dist = platform.dist()
 if not (system == "Linux" and dist[0].lower() in ("ubuntu", "debian")):
     sys.exit("Unsupported system")
 
-launch("apt install -y minetest lua-socket", sudo=True)
-launch("pip3 install --user --upgrade coderdojo-minetest mu-editor")
+launch("apt install -y minetest lua-socket curl", sudo=True)
+launch("pip3 install --user --upgrade coderdojo-minetest")
+launch("pip3 install --user mu-editor")
 launch("mkdir -p ~/.minetest")
 
 data_url = "https://github.com/amigrave/coderdojo-minetest/releases/download/0.0.1/coderdojo-minetest-data.tgz"

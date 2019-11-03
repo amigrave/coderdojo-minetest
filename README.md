@@ -19,7 +19,8 @@ wget -O - https://raw.githubusercontent.com/amigrave/coderdojo-minetest/master/i
 
 ```bash
 sudo apt install -y minetest lua-socket curl
-pip3 install --user --upgrade coderdojo-minetest mu-editor
+pip3 install --user --upgrade coderdojo-minetest
+pip3 install --user coderdojo-minetest mu-editor
 mkdir -p ~/.minetest
 curl -L https://github.com/amigrave/coderdojo-minetest/releases/download/0.0.1/coderdojo-minetest-data.tgz | tar zx -C ~/.minetest
 ln -s ~/.minetest/mods/raspberryjammod/coderdojo ~/Desktop/coderdojo-minetest
