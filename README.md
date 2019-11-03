@@ -5,3 +5,4 @@
 ## [Introduction](./01-introduction.md)
 ## [Les fonctions de base](./02-basic-api.md)
 ## [La pyramide](./03-pyramide.md)
+## [La maison](./04-maison.md)
