@@ -16,7 +16,8 @@ wget -O - https://raw.githubusercontent.com/amigrave/coderdojo-minetest/master/i
 ```
 <details>
     <summary>Command details</summary>
-```
+
+```bash
 sudo apt install -y minetest lua-socket curl
 pip3 install --user --upgrade coderdojo-minetest mu-editor
 mkdir -p ~/.minetest
