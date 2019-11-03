@@ -11,7 +11,14 @@ autre. Dans notre cas, `minetest` à été reprogrammé complètement tout en
 s'efforçant d'implémenter les mêmes fonctionnalités que Minecraft au fil
 du temps.
 
-:bell: TODO: license open source
+La [définition exacte du terme open source](https://fr.wikipedia.org/wiki/Open_Source_Definition)
+sort du cadre de cet atelier, mais on peut la résumer simplement en disant
+qu'un logiciel sous licence open source fournit quatre libertés fondamentales:
+
+1. La liberté d'utiliser le logiciel
+2. La liberté d'étudier le logiciel
+3. La liberté de copier le logiciel
+4. La liberté de modifier le logiciel et de redistribuer les versions modifiées
 
 
 ## Vérification de notre installation
@@ -59,8 +66,8 @@ Python qu'on utilise reprend les mêmes noms que le module Python de Minecraft.
 Cela a l'avantage de nous permettre d'utiliser des exemples qui ont été écrits
 pour Minecraft à l'origine.
 
-❗Afin de rester consistants, nous donnerons le nom `mc` à cet objet dans tous
-nos programmes.
+**Note:** Afin de rester consistants, nous donnerons le nom `mc` à cet objet
+dans tous nos programmes Minetest.
 
 Une fois que nous avons cet objet, nous pouvons appeler ses méthodes afin
 d'interagir avec le monde. La première méthode que nous allons apprendre est
