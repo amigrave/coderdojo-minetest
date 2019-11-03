@@ -7,7 +7,7 @@ du programme histoire de nous faciliter la vie.
 
 ## Essai #1
 
-Durant les dojos précédents nous avons utilise les boucles. Par exemple pour
+Durant les Dojos précédents nous avons utilise les boucles. Par exemple pour
 exécuter un bout de code 5 fois, nous pouvons utiliser ceci:
 
 ```python
@@ -110,7 +110,7 @@ for i in range(hauteur):
 ```
 
 AH ! Ca y est ! Voilà notre pyramide !
-Par contre notre pyramide a un défaut. Essayez de l'examiner pour trouver ce
+Par contre notre pyramide a un défaut. Essayons de l'examiner pour trouver ce
 qui cloche...
 
 ## Essai #5
@@ -132,17 +132,68 @@ for i in range(hauteur):
     mc.setBlocks(x1, y1, z1, x2, y2, z2, block.SAND)
 ```
 
-## Exercice
+🎺🎺🎺 Et voilà ! 🎉🎉🎉
+
+## Passage de paramètre
+
+Maintenant que nous avons un script pour construire des pyramides on peut
+l'appeler facilement dans Minetest en tapant la commande
+
+    /py pyramide
+
+Nous aimerions cependant pouvoir faire des pyramides de tailles différentes.
+Lorsqu'on ajoute quelque chose après le nom du programme on peut récupérer
+cette information sous forme de paramètres. Donc lorsque l'on utilise ceci:
+
+    /py pyramide 5
+
+Notre programme pourrait accéder à ce paramètre et l'utiliser pour réagir
+différemment. Voici comment faire:
+
+```python
+import sys
+hauteur = int(sys.argv[1])
+```
+
+Nous pouvons même demander à python d'essayer de lire le paramètre, mais
+d'utiliser une valeur par défaut s'il n'y arrive pas. Par exemple dans le cas
+où nous aurions fourni un nombre invalide ou si nous aurions tout simplement
+oublié de passer un paramètre:
+
+```python
+try:
+    hauteur = int(sys.argv[1])
+except Exception:
+    hauteur = 10
+```
+
+## Exercice #1
+
+Il est fortement déconseillé d'utiliser un paramètre trop grand pour la taille
+de la pyramide autrement ton ordinateur pourrait carrément planter !
+
+Essaie de modifier ton programme `pyramide.py` afin d'empêcher que l'on donne
+une taille plus grande que 20.
+
+Pour cela tu auras besoin d'utiliser les conditions comme nous l'avons fait
+durant les Dojos précédents, tu te rappelle probablement avoir utilisé les
+`if`, `elif` et `else`, voici un exemple pour te mettre sur la piste:
+
+```python
+if hauteur == 100:
+    mc.postToChat("Mais vous êtes fou ?")
+```
+
+## Exercice #2
 
 Nous aimerions maintenant que notre pyramide se compose de matériaux différents
 un palier sur deux. Le premier palier devrait être en sable (`block.SAND`) le
 deuxième en pierre (`block.STONE`) le troisième en sable, le quatrième en
 pierre, ...
 
-Pour cela tu auras besoin d'utiliser les conditions comme nous l'avons fait
-durant les dojo précédents ( `if` et `else` ), tu auras également besoin d'un
-opérateur qui permet de connaitre le reste d'une division entière.
-Cet opérateur est le modulo et en Python on l'exprime comme ceci: `%`
+Pour cela tu auras également besoin d'un opérateur qui permet de connaitre le
+reste d'une division entière. Cet opérateur est le modulo et en Python on
+l'exprime comme ceci: `%`
 
 Nous savons que lorsqu'on fait une divise entière de 4 par 2, le résultat est
 2 et il n'y a pas de reste. Une division entière de 5 par 2 nous donne un
@@ -159,7 +210,8 @@ Voici la même chose exprimée en Python:
 ```
 
 Tu auras compris que cela nous permet de savoir si un nombre est pair ou
-impair. C'est un fameux indice pour résoudre l'exercice.
+impair. C'est un fameux indice pour résoudre l'exercice !
+
 N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
 
 [⬅️ Retour au sommaire](./README.md)
