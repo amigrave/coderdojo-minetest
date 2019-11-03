@@ -13,13 +13,13 @@ ateliers CoderDojo minetest.
 
 ```
 sudo apt install -y minetest lua-socket curl
-pip3 install --user --upgrade coderdojo-minetest
+pip3 install --user --upgrade coderdojo-minetest mu-editor
 mkdir -p ~/.minetest
 curl -L https://github.com/amigrave/coderdojo-minetest/releases/download/0.0.1/coderdojo-minetest-data.tgz | tar zx -C ~/.minetest
 ln -s ~/.minetest/mods/raspberryjammod/coderdojo ~/Desktop/coderdojo-minetest
 ```
 
-# Windows
+### Windows
 
 - Install python3
 - Install coderdojo-minetest module
