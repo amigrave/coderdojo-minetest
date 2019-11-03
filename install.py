@@ -6,8 +6,8 @@ import sys
 
 def launch(cmd, sudo=False):
     if sudo and os.geteuid() != 0:
-        cmd = f"sudo {cmd}"
-    print(f"[cmd] {cmd}")
+        cmd = "sudo %s" % cmd
+    print("[cmd] %s" % cmd)
     os.system(cmd)
 
 system = platform.system()
@@ -22,6 +22,6 @@ launch("pip3 install --user mu-editor")
 launch("mkdir -p ~/.minetest")
 
 data_url = "https://github.com/amigrave/coderdojo-minetest/releases/download/0.0.1/coderdojo-minetest-data.tgz"
-launch(f"curl -L {data_url} | tar zx -C ~/.minetest")
+launch("curl -L %s | tar zx -C ~/.minetest" % data_url)
 
 launch("ln -s ~/.minetest/mods/raspberryjammod/coderdojo ~/Desktop/coderdojo-minetest")
