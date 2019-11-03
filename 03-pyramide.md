@@ -201,8 +201,6 @@ résultat de 2 avec un reste de 1.
 
 Voici la même chose exprimée en Python:
 
-N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
-
 ```python
 >>> 4 % 2
 0  # il n'y a pas de reste
@@ -213,6 +211,8 @@ N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
 
 Tu auras compris que cela nous permet de savoir si un nombre est pair ou
 impair. C'est un fameux indice pour résoudre l'exercice !
+
+N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
 
 ## Exercice #3
 
