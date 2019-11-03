@@ -201,6 +201,8 @@ résultat de 2 avec un reste de 1.
 
 Voici la même chose exprimée en Python:
 
+N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
+
 ```python
 >>> 4 % 2
 0  # il n'y a pas de reste
@@ -212,7 +214,16 @@ Voici la même chose exprimée en Python:
 Tu auras compris que cela nous permet de savoir si un nombre est pair ou
 impair. C'est un fameux indice pour résoudre l'exercice !
 
-N'hésite pas a te faire aider par un coach si tu ne trouves pas la solution !
+## Exercice #3
+
+Notre programme de pyramide fonctionne bien mais nous n'avons pas le choix
+de l'endroit où elle va se construire étant donné que nous avons décidé d'une
+position **absolue** pour sa création. Il serait intéressant que tu puisse
+créer une pyramide à l'endroit où se trouve ton personnage.
+
+Modifie ton programme afin de créer la pyramide à une distance de 5 blocs
+au Nord de la position de ton personnage, il s'agira alors d'une position
+**relative**. Tu devras pour cela utiliser la méthode `mc.player.getTilePos()`.
 
 
 [⬅️ Retour au sommaire](./README.md)

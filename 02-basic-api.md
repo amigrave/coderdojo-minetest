@@ -79,4 +79,19 @@ mc = minecraft.Minecraft.create()
 mc.setBlocks(-50, 0, -50, 50, 50, 50, block.AIR)
 ```
 
+## .player.getTilePos()
+
+Cette méthode retourne la position du bloc sur lequel notre personnage se
+trouve. Nous recevons donc un jeu de coordonnées qui correspond a trois
+valeurs, une pour chaque axe (x, y et z). Pour tout ce qui a un rapport avec
+le personnage, nous allons utiliser des méthodes de l'objet `player` qui
+se trouve être un attribut de l'objet `mc`.
+
+```python
+from mcpi import block, minecraft
+mc = minecraft.Minecraft.create()
+
+x, y, z = mc.player.getTilePos()
+```
+
 [⬅️ Retour au sommaire](./README.md)
