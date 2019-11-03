@@ -40,5 +40,5 @@ https://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF
 Single installer for all OSes/distros (not working yet)
 
 ```
-curl -s https://raw.githubusercontent.com/amigrave/coderdojo-minetest/master/install.py | python
+curl -s https://raw.githubusercontent.com/amigrave/coderdojo-minetest/master/install.py | python3
 ```
